@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'in.magicapi.gateway'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.cashfree.pg:android-sdk:1.7.26'
+    implementation 'in.payu:payu-checkout-pro:2.0.2'
+
+    implementation 'in.payu:upisdk:1.6.5'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    implementation 'com.github.sureshmaidaragi1919:CircularTimer:1.1'
+
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.6.14'
+}

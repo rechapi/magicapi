@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:padding="@dimen/_8sdp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_cancel_circle"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"/>
+    <TextView
+        android:layout_margin="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/green_new"
+        android:textSize="@dimen/_16sdp"
+        android:text="Approve Payment In UPI App"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Go to bhim app to approve request"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Check pending transaction and click on approve"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Enter upi pin to approve request"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.view.circulartimerview.CircularTimerView
+        android:layout_gravity="center"
+        android:id="@+id/progress_circular"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:progressColor="@color/orange"
+        app:backgroundColor="@color/white"
+        app:progressBackgroundColor="#eee"
+        app:backgroundWidth="8"
+        app:isClockwise="true"
+        app:textSize="18sp"
+        app:prefix=""
+        app:suffix=""
+        app:progressText="05:00"
+        app:maxValue="100"
+        app:startingPoint="bottom"
+        app:progressTextColor="@color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--<dimen name="toolbar_size">@dimen/_16sdp</dimen>-->
+
+    <dimen name="toolbar_size">@dimen/_14sdp</dimen>
+
+    <dimen name="design_fab_size_mini" tools:override="true">@dimen/_100sdp</dimen>
+    <dimen name="design_fab_content_size" tools:override="true">@dimen/_100sdp</dimen>
+
+    <dimen name="some_padding">@dimen/_100sdp</dimen>
+    <dimen name="itemWidth">@dimen/_300sdp</dimen>
+
+</resources>
